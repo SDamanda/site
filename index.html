@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width  inicial-scale=1.0">
@@ -9,17 +10,19 @@
             background-color: #00001b;
             margin: 0;
         }
-        .line{
+
+        .line {
             height: 3px;
-            background-color: rgba(12,12,38,255);
+            background-color: rgba(12, 12, 38, 255);
             width: 100%;
             position: fixed;
             top: 50px;
             left: 0;
             z-index: 9999;
-            
-        }     
-        .search input{
+
+        }
+
+        .search input {
             background-color: black;
             color: grey;
             display: flex;
@@ -32,7 +35,8 @@
             right: 160px;
             padding: 10px;
         }
-        .header{
+
+        .header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -44,24 +48,26 @@
             align-items: center;
             padding: 0 40px;
             box-sizing: border-box;
-    }
-        
-        .login button{
+        }
+
+        .login button {
             background: transparent;
             border: none;
             color: white;
             font-size: 16px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;http://127.0.0.1:5500/home/hp.png
-            letter-spacing: 1px;
+            font-weight: 700;
+            http: //127.0.0.1:5500/home/hp.png
+                letter-spacing: 1px;
             position: fixed;
             top: 10px;
             right: 100px;
             padding: 10px px;
-            
-            
+
+
         }
-        .login2 button{
+
+        .login2 button {
             margin-left: auto;
             background: #5758ff;
             border-radius: 50vh;
@@ -71,70 +77,100 @@
             color: white;
             font-size: 16px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 700;http://127.0.0.1:5500/home/hp.png
-            letter-spacing: 1px;
+            font-weight: 700;
+            http: //127.0.0.1:5500/home/hp.png
+                letter-spacing: 1px;
             position: fixed;
             top: 10px;
             right: 10px;
             padding: 10px px;
-            
-        }
-        .login2 button:hover{
-            background-color: #0b163b;
-            color: white
 
         }
-        .login button:hover{
+
+        .login2 button:hover {
+            background-color: #0b163b;
+            color: white
+        }
+
+        .login button:hover {
             color: #0d1d67;
         }
-        .img{
+
+        .img {
             width: 100px;
             height: auto;
         }
-        .casasf{
+
+        .casasf {
             width: 200px;
             padding: 20px;
             animation: flutuar 3s ease-in-out infinite;
         }
-        @keyframes flutuar{
-            0%{
+
+        @keyframes flutuar {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(10px);
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+        }
+
+        .filmes {
+            width: 200px;
+            padding: 20px;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+        @keyframes flutuar {
+            0% {
                 transform: translateY(0px);
             }
             50% {
                 transform: translateY(10px);
-                 100% {
+            }
+            100% {
                 transform: translateY(0px);
-                }
             }
         }
-        .casas{
-            
-        }
-    </style>      
+
+    </style>
 </head>
-<body> 
+
+<body>
     <header>
         <img src="home/hp.png" class="img">
-       
-        <div class="line"></div>
-    
-    <div class="search">
-        <input type="text" placeholder="search..." class="search">
-    
-    <div class="login">
-        <button onclick="">log in</button>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    </div>
-        <div class="login2">
-            <button onclick="">sign up</button>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">    
-        </div>
 
-        <img src="home/casas.jpeg" class="casasf">
-        <input type="text" class="casas">
- 
-  
+        <div class="line"></div>
+
+        <div class="search">
+            <input type="text" placeholder="search..." class="search">
+
+            <div class="login">
+                <button onclick="">log in</button>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+                    rel="stylesheet">
+            </div>
+            <div class="login2">
+                <button onclick="">sign up</button>
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+                    rel="stylesheet">
+            </div>
+
+            <div class="container-ft">
+                <img src="home/casas.jpeg" class="casasf">
+                <img src="home/filmes.jpg" class="filmes">
+            </div>
+
+
+
+
     </header>
 
 </body>
+
 </html>
