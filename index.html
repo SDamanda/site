@@ -106,7 +106,7 @@
             padding: 20px;
             animation: flutuar 3s ease-in-out infinite;
         }
-        @keyframes flutuar {
+                @keyframes flutuar {
             0% {
                 transform: translateY(0px);
             }
@@ -119,27 +119,20 @@
                 }
             }
         }
-
         .filmes {
             width: 200px;
             padding: 20px;
             animation: flutuar 3s ease-in-out infinite;
         }
-
-        @keyframes flutuar {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(10px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
+        .personagens{
+            width: 200px;
+            padding: 20px;
+            animation: flutuar 3s ease-in-out infinite;
         }
-    </style>
+        
+        
+    
+            </style> 
 </head>
 
 <body>
@@ -165,7 +158,11 @@
             <div class="container-ft">
                 <img src="home/casas.jpeg" class="casasf">
                 <img src="home/filmes.jpg" class="filmes">
+                <img src="home/trio2.png" class="personagens">
             </div>
+            <button class="home" onclik="telacasas()">homes</button>
+            <button class="movies" onclick="telafilmes()">movies</button>
+            <button class="personagens" onclick="telapersonagens()">personagens</button>
     </header>
 </body>
 </html>
