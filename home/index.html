@@ -27,7 +27,7 @@
         }
 
         .search input {
-            background-color: black;
+            background-color: #0b163b;
             color: grey;
             display: flex;
             align-items: center;
@@ -36,8 +36,9 @@
             border: none;
             position: fixed;
             top: 10px;
-            right: 160px;
-            padding: 10px;
+            right: 180px;
+            padding: 8px;
+            align-items: center;
         }
 
         .header {
@@ -95,10 +96,10 @@
         }
 
         .img {
-            width: 100px;
+            width: 130px;
             height: auto;
-            position: fixed;
-            top: 10px;
+            position: absolute;
+            top: -1%;
         }
 
         .casasf {
@@ -229,17 +230,19 @@
 <body>
     <header>
         <div class="content-box"></div>
-        <img src="hp.png" class="img">
+        <img src="/img/hp.png" class="img">
         <div class="line"></div>
         <div class="search">
             <input type="text" placeholder="search..." class="search">
             <div class="login">
-                <button onclick="">log in</button>
+                <a href="/loginpag/index.html">
+                <button onclick="">log in</button></a>
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
                     rel="stylesheet">
             </div>
             <div class="login2">
-                <button onclick="">sign up</button>
+                <a href="/singuppag/index.html">
+                <button onclick="">sign up</button></a>
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
                     rel="stylesheet">
             </div>
@@ -248,14 +251,16 @@
 
 
     <div class="container-ft">
-        <img src="casas.jpeg" class="casasf">
-        <img src="filmes.jpg" class="filmes">
-        <img src="trio2.png" class="personagens">
+        <img src="/img/casas.jpeg" class="casasf">
+        <img src="/img/filmes.jpg" class="filmes">
+        <img src="/img/trio2.png" class="personagens">
     </div>
     <a href="/casaspag/index.html">
     <button class="home" onclik="telacasas()">homes</button></a>
-    <button class="movies" onclik="telafilmes()">movies</button>
-    <button class="character" onclik="telapersonagens()">character</button>
+    <a href="/filmespag/index.html">
+    <button class="movies" onclik="telafilmes()">movies</button></a>
+    <a href="/persopag/index.html">
+    <button class="character" onclik="telapersonagens()">character</button></a>
 </body>
 
 </html>
