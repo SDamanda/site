@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width  inicial-scale=1.0">
     <title>HPfc</title>
     <style>
-        *{
+        * {
             margin: 0%;
             box-sizing: border-box;
         }
+
         body {
             background-color: #00001b;
             margin: 0;
-           
+
         }
 
         .line {
@@ -105,8 +106,8 @@
             position: fixed;
             top: 10px;
             left: ;
-            
-            
+
+
         }
 
         .casasf {
@@ -119,17 +120,18 @@
 
         @keyframes flutuar {
             0% {
-                transform: translateY(0px);
+                transform: translateY(0px)
             }
 
             50% {
-                transform: translateY(10px);
+                transform: translateY(10px)
+            }
 
-                100% {
-                    transform: translateY(0px);
-                }
+            100% {
+                transform: translateY(0px)
             }
         }
+
 
         .filmes {
             width: 200px;
@@ -160,27 +162,84 @@
         }
 
         @keyframes flutuar {
-            0% {transform: translateY(0px)}
-            50% {transform: translateY(10px)}
-            100% {tranform: translateY(0px)}
+            0% {
+                transform: translateY(0px)
+            }
+
+            50% {
+                transform: translateY(10px)
+            }
+
+            100% {
+                tranform: translateY(0px)
+            }
         }
 
         .home:hover {
-            background-color: #0b163b;
+            background-color: #040c24;
         }
-        .content-box{
+
+        .content-box {
             background-color: #040c24;
             padding: 25px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
 
+        .movies {
+            background-color: #0b163b;
+            color: white;
+            border-color: black;
+            border-radius: 5px;
+            border: none;
+            font-weight: 300;
+            padding: 5px 60px;
+            font-size: 16px;
+            cursor: pointer;
+            position: absolute;
+            top: 380px;
+            left: 220px;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+
+        .movies:hover {
+            background-color: #040c24;
+        }
+
+        .character {
+            background-color: #0b163b;
+            color: white;
+            border-color: black;
+            border-radius: 5px;
+            border: none;
+            font-weight: 300;
+            padding: 5px 50px;
+            font-size: 16px;
+            cursor: pointer;
+            position: absolute;
+            top: 380px;
+            left: 430px;
+            animation: flutuar 3s ease-in-out infinite;
+        }
+
+        .character:hover {
+            background-color: #040c24;
+        }
+        .caixa-bot-home{
+            background-color: black;
+            width: 100px;
+            height: 10px;
+            padding: 10px;
+            margin: auto;
+            
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="content-box"></div>
         <img src="home/hp.png" class="img">
-              <div class="line"></div>
+        <div class="line"></div>
         <div class="search">
             <input type="text" placeholder="search..." class="search">
             <div class="login">
@@ -193,18 +252,21 @@
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
                     rel="stylesheet">
             </div>
-            </div>
+        </div>
     </header>
-            
-            
 
-            <div class="container-ft">
-                <img src="home/casas.jpeg" class="casasf">
-                <img src="home/filmes.jpg" class="filmes">
-                <img src="home/trio2.png" class="personagens">
-            </div>
-            <button class="home" onclik="telacasas()">homes</button>
-    
+
+
+    <div class="container-ft">
+        <img src="home/casas.jpeg" class="casasf">
+        <img src="home/filmes.jpg" class="filmes">
+        <img src="home/trio2.png" class="personagens">
+    </div>
+    <div class="caixa-bot-home">
+    <button class="home" onclik="telacasas()">homes</button>
+</div>
+    <button class="movies" onclik="telafilmes()">movies</button>
+    <button class="character" onclik="telapersonagens()">character</button>
 </body>
 
 </html>
