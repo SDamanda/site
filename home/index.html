@@ -105,34 +105,25 @@
         .casasf {
             width: 200px;
             padding: 20px;
-            animation: flutuar 3s ease-in-out infinite;
             position: relative;
             z-index: 1;
             box-shadow: 4px 4px 20px rgba(9, 61, 100, 0.3);
         }
 
-        @keyframes flutuar {
-            0% {transform: translateY(0px)}
-            50% {transform: translateY(10px)}
-            100% {transform: translateY(0px)}
-        }
-
-
         .filmes {
             width: 200px;
             padding: 20px;
             box-shadow: 4px 4px 20px rgba(9, 61, 100, 0.3);
-            animation: flutuar 3s ease-in-out infinite;
+
         }
 
         .personagens {
             width: 200px;
             padding: 20px;
             box-shadow: 4px 4px 20px rgba(9, 61, 100, 0.3);
-            animation: flutuar 3s ease-in-out infinite;
         }
 
-        .homes {
+        .home {
             background-color: #0b163b;
             color: gray;
             border-color: black;
@@ -146,18 +137,12 @@
             top: 380px;
             left: 20px;
             font-family: 'Poppins', sans-serif;
-            text-shadow: 4px 4px 20px rgba(11, 49, 119, 0.5);            animation: flutuar 3s ease-in-out infinite;
-        }
+            text-shadow: 4px 4px 20px rgba(11, 49, 119, 0.5);
 
-        @keyframes flutuar {
-            0% {transform: translateY(0px)}
-            50% {transform: translateY(10px)}
-            100% {tranform: translateY(0px)}
         }
-
-        .homes:hover {
+        .home:hover {
             background-color: #040c24;
-           
+
         }
 
         .content-box {
@@ -209,14 +194,6 @@
         .character:hover {
             background-color: #040c24;
         }
-
-        .artefatos {
-            width: 200px;
-            padding: 10px;
-            position: absolute;
-            top: 450px;
-            animation: flutuar 3s ease-in-out infinite;
-        }
     </style>
 </head>
 
@@ -246,11 +223,11 @@
         <img src="/img/casas.jpeg" class="casasf">
         <img src="/img/filmes.jpg" class="filmes">
         <img src="/img/trio2.png" class="personagens">
-        <img src="" class="artefatos">
+
     </div>
     <div class="font">
         <a href="/casaspag/index.html">
-            <button class="homes" onclik="telacasas()">homes</button></a>
+            <button class="home" onclik="telacasas()">homes</button></a>
         <a href="/filmespag/index.html">
             <button class="movies" onclik="telafilmes()">movies</button></a>
         <a href="/persopag/index.html">
