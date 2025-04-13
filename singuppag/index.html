@@ -34,15 +34,16 @@
             position: relative;
             top: -30px;
             font-size: 30px;
+            
         }
 
         .input {
             background-color: gray;
-            padding-left: 66px;
             border: none;
             position: relative;
             top: -46px;
             border-radius: 3px;
+            padding-right: 10px;
         }
 
         .p {
@@ -50,7 +51,8 @@
             display: flex;
             position: relative;
             top: -35px;
-            right: 98px;
+            right: 70px;
+            font-size: 15px;
         }
 
         .pp {
@@ -58,7 +60,8 @@
             display: flex;
             position: relative;
             top: -35px;
-            right: 84px;
+            right: 54px;
+            font-size: 15px;
         }
 
         .button {
@@ -67,6 +70,8 @@
             border: none;
             width: 88px;
             border-radius: 3px;
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .button:hover {
@@ -78,11 +83,11 @@
 <body>
     <section>
         <h1 class="h1">Sing up</h1>
-        <p class="p">name</p>
+        <p class="p">name:</p>
         <input class="input" type="name">
-        <p class="p">email</p>
+        <p class="p">email:</p>
         <input class="input" type="email">
-        <p class="pp">password</p>
+        <p class="pp">password:</p>
         <input class="input" type="password">
         <button class="button" onclick="singup()">Sing up</button>
     </section>
