@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sing up</title>
     <style>
-        body{
+        body {
+            background-color: #00001b;
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            position: relative;
+            top: 100px;
+            right: -500px;
+            width: min-content;
+            box-sizing: border-box;
+
+        }
+
+        .h1 {
+            color: #00002b;
+            position: relative;
+            top: -30px;
+            font-size: 30px;
+        }
+
+        .input {
+            background-color: gray;
+            padding-left: 66px;
+            border: none;
+            position: relative;
+            top: -46px;
+            border-radius: 3px;
+        }
+
+        .p {
+            color: gray;
+            display: flex;
+            position: relative;
+            top: -35px;
+            right: 98px;
+        }
+
+        .pp {
+            color: gray;
+            display: flex;
+            position: relative;
+            top: -35px;
+            right: 84px;
+        }
+
+        .button {
+            background-color: #00002b;
+            color: gray;
+            border: none;
+            width: 88px;
+            border-radius: 3px;
+        }
+
+        .button:hover {
             background-color: #00001b;
         }
     </style>
 </head>
+
 <body>
-    <h1></h1>
+    <section>
+        <h1 class="h1">Sing up</h1>
+        <p class="p">name</p>
+        <input class="input" type="name">
+        <p class="p">email</p>
+        <input class="input" type="email">
+        <p class="pp">password</p>
+        <input class="input" type="password">
+        <button class="button" onclick="singup()">Sing up</button>
+    </section>
+
 </body>
+
 </html>
