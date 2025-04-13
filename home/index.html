@@ -108,36 +108,31 @@
             animation: flutuar 3s ease-in-out infinite;
             position: relative;
             z-index: 1;
+            box-shadow: 4px 4px 20px rgba(9, 61, 100, 0.3);
         }
 
         @keyframes flutuar {
-            0% {
-                transform: translateY(0px)
-            }
-
-            50% {
-                transform: translateY(10px)
-            }
-
-            100% {
-                transform: translateY(0px)
-            }
+            0% {transform: translateY(0px)}
+            50% {transform: translateY(10px)}
+            100% {transform: translateY(0px)}
         }
 
 
         .filmes {
             width: 200px;
             padding: 20px;
+            box-shadow: 4px 4px 20px rgba(9, 61, 100, 0.3);
             animation: flutuar 3s ease-in-out infinite;
         }
 
         .personagens {
             width: 200px;
             padding: 20px;
+            box-shadow: 4px 4px 20px rgba(9, 61, 100, 0.3);
             animation: flutuar 3s ease-in-out infinite;
         }
 
-        .home {
+        .homes {
             background-color: #0b163b;
             color: gray;
             border-color: black;
@@ -151,25 +146,18 @@
             top: 380px;
             left: 20px;
             font-family: 'Poppins', sans-serif;
-            animation: flutuar 3s ease-in-out infinite;
+            text-shadow: 4px 4px 20px rgba(11, 49, 119, 0.5);            animation: flutuar 3s ease-in-out infinite;
         }
 
         @keyframes flutuar {
-            0% {
-                transform: translateY(0px)
-            }
-
-            50% {
-                transform: translateY(10px)
-            }
-
-            100% {
-                tranform: translateY(0px)
-            }
+            0% {transform: translateY(0px)}
+            50% {transform: translateY(10px)}
+            100% {tranform: translateY(0px)}
         }
 
-        .home:hover {
+        .homes:hover {
             background-color: #040c24;
+           
         }
 
         .content-box {
@@ -212,7 +200,7 @@
             cursor: pointer;
             position: absolute;
             top: 380px;
-            left: 430px;
+            left: 421px;
             font-family: 'Poppins', sans-serif;
 
             animation: flutuar 3s ease-in-out infinite;
@@ -262,7 +250,7 @@
     </div>
     <div class="font">
         <a href="/casaspag/index.html">
-            <button class="home" onclik="telacasas()">homes</button></a>
+            <button class="homes" onclik="telacasas()">homes</button></a>
         <a href="/filmespag/index.html">
             <button class="movies" onclik="telafilmes()">movies</button></a>
         <a href="/persopag/index.html">
